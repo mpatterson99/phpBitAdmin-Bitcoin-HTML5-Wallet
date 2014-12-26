@@ -13,4 +13,5 @@ $btc_address = ''; // your default address for receiving payments. [required]
 $passphrase  = 'My Passphrase'; // passphrase required to unlock encrypted wallet to send bitcoins. [required if wallet is encrypted]
 $scheme		 = 'http' // tcp protocol to access json on bitcoind. [default]
 //*************************************************//
+$host = $server_ip;
 ?>
