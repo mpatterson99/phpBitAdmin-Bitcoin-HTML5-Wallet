@@ -10,7 +10,7 @@ if ( (empty($_SESSION['PHPBITADMIN'])) || ($_SESSION['PHPBITADMIN'] === null) ) 
 if( $session ) {
 	$check_server = $wallet->ping($scheme, $server_ip, $server_port);
 	if ( $check_server == '' || empty($check_server) ) {
-		die (' The bitcoind server located at '. $scheme.'://'.$host.' on Port:['.$server_port.'] appears to be unresponsive.');
+		die (' The bitcoind server located at '. $scheme.'://'.$server_port.' on Port:['.$server_port.'] appears to be unresponsive.');
 	}
 	$check_login =  $wallet->rpc($scheme,$server_ip,$server_port,$rpc_user,$rpc_pass,'getinfo') ;
 	if ( !is_array($check_login) ) {
